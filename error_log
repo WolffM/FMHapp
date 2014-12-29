@@ -1,0 +1,19 @@
+[29-Dec-2014 13:49:08] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/ruben/public_html/fmhApp/indexforserver.php on line 4
+[29-Dec-2014 13:49:46] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/ruben/public_html/fmhApp/indexforserver.php on line 4
+[29-Dec-2014 13:49:48] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/ruben/public_html/fmhApp/indexforserver.php on line 4
+[29-Dec-2014 13:49:49] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/ruben/public_html/fmhApp/indexforserver.php on line 4
+[29-Dec-2014 13:50:02] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home4/ruben/public_html/fmhApp/indexforserver.php on line 34
+[29-Dec-2014 13:50:23] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'matt@personalizedcancercareinstitute.com'@'192.254.190.186' (using password: YES) in /home4/ruben/public_html/fmhApp/indexforserver.php on line 8
+[29-Dec-2014 13:58:43] PHP Parse error:  syntax error, unexpected T_PRINT in /home4/ruben/public_html/fmhApp/indexforserver.php on line 18
+[29-Dec-2014 13:59:00] PHP Parse error:  syntax error, unexpected T_PRINT in /home4/ruben/public_html/fmhApp/indexforserver.php on line 18
+[29-Dec-2014 13:59:03] PHP Parse error:  syntax error, unexpected T_PRINT in /home4/ruben/public_html/fmhApp/indexforserver.php on line 18
+[29-Dec-2014 14:19:29] PHP Fatal error:  Uncaught exception 'PDOException' with message 'invalid data source name' in /home4/ruben/public_html/fmhApp/indexforserver.php:8
+Stack trace:
+#0 /home4/ruben/public_html/fmhApp/indexforserver.php(8): PDO->__construct('ftp.personalize...', 'ruben_fmh', 'spartan123', NULL)
+#1 {main}
+  thrown in /home4/ruben/public_html/fmhApp/indexforserver.php on line 8
+[29-Dec-2014 14:22:20] PHP Fatal error:  Class 'mysqli_connect' not found in /home4/ruben/public_html/fmhApp/indexforserver.php on line 8
+[29-Dec-2014 14:23:14] PHP Fatal error:  Call to a member function query() on a non-object in /home4/ruben/public_html/fmhApp/indexforserver.php on line 15
+[29-Dec-2014 14:27:03] PHP Fatal error:  Call to a member function query() on a non-object in /home4/ruben/public_html/fmhApp/indexforserver.php on line 28
+[29-Dec-2014 14:31:42] PHP Parse error:  syntax error, unexpected '<' in /home4/ruben/public_html/fmhApp/indexforserver.php on line 19
+[29-Dec-2014 14:32:36] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home4/ruben/public_html/fmhApp/indexforserver.php on line 20
