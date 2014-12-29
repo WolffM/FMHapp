@@ -24,7 +24,7 @@ catch(PDOException $e)
     echo "<br>";
     }	 
 
-$sql = "Select * from questions where questionset = 2;";
+$sql = "Select * from questions where questionset = 1;";
 
 	echo '
 
@@ -36,23 +36,37 @@ $sql = "Select * from questions where questionset = 2;";
 	<br>
 	Last name:<br>
 	<input type="text" name="lastname" value="">
+	<br>
 	Email:<br>
 	<input type="email" name="email" value="">
 	<br><br>
 	</fieldset>
 
 	';
-
+	$temp = "";
+	$counter = 1;
 foreach ($conn->query($sql) as $row)
 {
-	echo "test*";
-	echo "<br>";
+	if($row[3]!=$temp){
+		$temp = $row[3];
+		echo "<br><br><br>";
+		echo "$temp";
+		echo "<br><br>";
+	}
+	echo $counter;
+	echo ". ";
+
     echo $row[1];
+    echo "             ";
+    echo "<input type='radio' name='$row[0]' value='Yes'>Yes";
+    echo "    ";
+	echo "<input type='radio' name='$row[0]' value='No'>No";
     echo "<br>";
-    echo "<br>";
+    $counter++;
 }
 
 	echo'
+	<br><br>
 	<input type="submit" value="Submit">
 	</form>
 
