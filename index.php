@@ -1,9 +1,9 @@
 <?php
 
-$sername = "ftp.personalizedcancercareinstitute.com"
-$usename = "matt@personalizedcancercareinstitute.com"
-$pass = "einszweithreefour"
-$dbname = "Ruben_fmhApp"
+$sername = ""
+$usename = ""
+$pass = ""
+$dbname = ""
 
 $conn = new mysqli($sername, $usename, $pass, $db);
 
