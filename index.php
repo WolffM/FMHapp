@@ -67,6 +67,8 @@ foreach ($conn->query($sql) as $row)
 
 	echo'
 	<br><br>
+	<input type="checkbox" name="agreement" value="Agree"> I agree to the terms and uses<br><br>
+
 	<input type="submit" value="Submit">
 	</form>
 
