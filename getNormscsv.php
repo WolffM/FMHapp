@@ -21,8 +21,8 @@ catch(PDOException $e)
     }
 
 $row = 0;
-$upperAgeRow = 1;
-$lowerAgeRow = 2;
+$upperAgeRow = 2;
+$lowerAgeRow = 1;
 $pointsOffset= 2;
 $pointsOffsetTop=2;
 $upperAge = array();

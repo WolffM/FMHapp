@@ -5,12 +5,6 @@ $usename = ""
 $pass = ""
 $dbname = ""
 
-	// $conn = new mysqli($servername, $username, $pass, $dbname);
-
-	// if ($conn->connect_error) {
-	//     die("Connection failed: " . $conn->connect_error);
-	// }
-
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $pass);
     // set the PDO error mode to exception
@@ -24,21 +18,27 @@ catch(PDOException $e)
     echo "<br>";
     }	 
 
-$sql = "Select * from questions where questionset = 1;";
+$sql = "SELECT * FROM questions WHERE questionset = 1;";
 
 	echo '
 
 	<form action="results.php" method="POST">
 	<fieldset>
 	<legend>Personal information:</legend>
+	***** Name:<br>
+	<input type="text" name ="name" value="No Name" required value="1">
+	<br>
+	***** Age:<br>
+	<input type="text" name ="age" value="">
+	<br>
 	First name:<br>
-	<input type="text" name="firstname" value="">
+	<input type="text" name="firstname" value="" required value="1">
 	<br>
 	Last name:<br>
-	<input type="text" name="lastname" value="">
+	<input type="text" name="lastname" value="" required value="1">
 	<br>
 	Email:<br>
-	<input type="email" name="email" value="">
+	<input type="email" name="email" value="" required value="1">
 	<br><br>
 	</fieldset>
 
@@ -58,16 +58,16 @@ foreach ($conn->query($sql) as $row)
 
     echo $row[1];
     echo "             ";
-    echo "<input type='radio' name='$row[0]' value='Yes'>Yes";
+    echo "<input type='radio' name='$row[0]' value='Yes' required value='1'>Yes";
     echo "    ";
-	echo "<input type='radio' name='$row[0]' value='No'>No";
+	echo "<input type='radio' name='$row[0]' value='No' required value='1'>No";
     echo "<br>";
     $counter++;
 }
 
 	echo'
 	<br><br>
-	<input type="checkbox" name="agreement" value="Agree"> I agree to the terms and uses<br><br>
+	<input type="checkbox" name="agreement" value="Agree" required value="1"> I agree to the terms and uses<br><br>
 
 	<input type="submit" value="Submit">
 	</form>
