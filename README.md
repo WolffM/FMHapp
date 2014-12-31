@@ -7,7 +7,7 @@ FMHapp is an online survey hosted by [personalizedcancercareinstitute.com](perso
 
 The app is written in php with inline html and can be used for all types of surveys. Questions are gathered from a MySQL database.
 
-![FMHApp2](http://i.imgur.com/HcS3DhG.png)
+![FMHApp2](http://i.imgur.com/tHcVsoa.png)
 
 New data is inserted back into MySQL for analysis and can be exported to .csv
 
